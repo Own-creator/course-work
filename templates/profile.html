@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--     информация о сайте и размещения его иконки-->
+    <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href={{ css_path }}/>
+        <link rel="shortcut icon" href={{ icon_path }} type="image/x-icon">
+        <title>Profile</title>
+    </head>
+<!--   главный контент нашего сайта -->
+    <body id="body">
+<!--        меню управления нашим сайтом-->
+        <header id="header">
+            <a id="logo" href={{ site_url }}>
+                <img id="site-logo" src={{ site_icon_path }} alt="Random Wallpapers" width="261" height="64"></a>
+            <a id="faq" href="faq">
+                <img id="faq-img" src={{ question_mark_path }} alt="Faq" width="64" height="64"></a>
+        </header>
+        <main id="main">
+<!--            отрисовка нашего прифиля с аватаром и именем-->
+            <header id="profile-header" class="own-profile">
+                <a class="avatar">
+                    <img src={{ avatar_path }} alt="Avatar">
+                </a>
+                <div id="user">
+                    <h1 class="username"><a>Відьменко Олексій Сергійович</a></h1>
+                </div>
+            </header>
+
+            <h1>Liked photos</h1>
+            <div class="liked_photos_container">
+
+            </div>
+        </main>
+<!--        подключаем скрипт чтобы выгружались лайнутые фотографии-->
+        <script src={{ script_path }}></script>
+    </body>
+</html>
